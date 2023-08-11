@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Seat Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-container">
+      <div class="seat-info">
+        <h4>Know about your seat types</h4>
+        <ul class="items">
+          <div class="info">
+            <div
+              style="border: 1px solid rgb(63, 234, 63)"
+              class="seat-left"
+            ></div>
+            <li>Available</li>
+          </div>
+          <div class="info">
+            <div style="border: 1px solid pink" class="seat-left"></div>
+            <li>Available only for women</li>
+          </div>
+          <div class="info">
+            <div
+              style="background-color: rgb(63, 234, 63)"
+              class="seat-left"
+            ></div>
+            <li>Selected by you</li>
+          </div>
+          <div class="info">
+            <div style="border: 1px solid black" class="seat-left"></div>
+            <li>Booked by others</li>
+          </div>
+          <div class="info">
+            <div style="border: 1px solid red" class="seat-left"></div>
+            <li>Booked by female passengers</li>
+          </div>
+        </ul>
+      </div>
+
+      <div class="deck">
+        <div class="seat-container ld">
+          <h2>Lower deck</h2>
+          <div class="seat-row">
+            <div class="seat" id="seat1">
+              L1
+              <div class="price">₹2999</div>
+            </div>
+
+            <div class="seat available" id="seat2">
+              L2
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat female" id="seat3">
+              L3
+              <div class="price">₹2999</div>
+            </div>
+          </div>
+
+          <div class="seat-row">
+            <div class="seat female" id="seat4">
+              L4
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat others" id="seat5">
+              L5
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat others" id="seat6">
+              L6
+              <div class="price">₹2999</div>
+            </div>
+          </div>
+
+          <div class="seat-row">
+            <div class="seat others" id="seat7">
+              L7
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat female" id="seat8">
+              L8
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat available-female" id="seat9">L9</div>
+          </div>
+
+          <div class="seat-row">
+            <div class="seat available" id="seat10">
+              L10
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat available" id="seat11">
+              L11
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat available" id="seat12">
+              L12
+              <div class="price">₹2999</div>
+            </div>
+          </div>
+
+          <div class="seat-row">
+            <div class="seat others" id="seat13">
+              L13
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat available" id="seat14">
+              L14
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat available" id="seat15">
+              L15
+              <div class="price">₹2999</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="seat-container ud">
+          <h2>Upper deck</h2>
+          <div class="seat-row">
+            <div class="seat available" id="seat1">
+              U1
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat available" id="seat2">
+              U2
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat female" id="seat3">
+              U3
+              <div class="price">₹2999</div>
+            </div>
+          </div>
+
+          <div class="seat-row">
+            <div class="seat female" id="seat4">
+              U4
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat others" id="seat5">
+              U5
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat others" id="seat6">
+              U6
+              <div class="price">₹2999</div>
+            </div>
+          </div>
+
+          <div class="seat-row">
+            <div class="seat others" id="seat7">
+              U7
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat female" id="seat8">
+              U8
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat available-female" id="seat9">
+              U9
+              <div class="price">₹2999</div>
+            </div>
+          </div>
+
+          <div class="seat-row">
+            <div class="seat available" id="seat10">
+              U10
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat available" id="seat11">
+              U11
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat available" id="seat12">
+              U12
+              <div class="price">₹2999</div>
+            </div>
+          </div>
+
+          <div class="seat-row">
+            <div class="seat others" id="seat13">
+              U13
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat available" id="seat14">
+              U14
+              <div class="price">₹2999</div>
+            </div>
+            <div class="seat available" id="seat15">
+              U15
+              <div class="price">₹2999</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="booking-details">
+      <div class="seat-details">
+        <div class="total-seats" id="totalSeats"></div>
+        <div class="selected-seats" id="selectedSeats"></div>
+      </div>
+      <div class="total-price" id="totalPrice"></div>
+    </div>
+
+    <button class="continue" id="continue">Continue</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
